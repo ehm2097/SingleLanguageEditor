@@ -3,7 +3,7 @@ using System.Data;
 using System.Globalization;
 using Microsoft.Extensions.Configuration;
 
-namespace MLE.DeadKeys;
+namespace Avat.SingleLanguageEditor.DeadKeys;
 
 internal static class KeyComboDefConfig
 {

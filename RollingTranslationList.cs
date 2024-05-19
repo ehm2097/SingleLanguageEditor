@@ -1,7 +1,7 @@
 using System.Collections;
 using Accessibility;
 
-namespace MLE;
+namespace Avat.SingleLanguageEditor;
 
 internal class RollingTranslationList : IEnumerable<object>
 {

@@ -4,13 +4,13 @@ using System.Globalization;
 using System.Security.AccessControl;
 using System.Text.Json.Serialization.Metadata;
 using Microsoft.Extensions.Configuration;
-using MLE.DeadKeys;
+using Avat.SingleLanguageEditor.DeadKeys;
 
-namespace MLE;
+namespace Avat.SingleLanguageEditor;
 
-public partial class Form1 : Form
+public partial class Explorer : Form
 {
-    public Form1(IConfiguration configuration)
+    public Explorer(IConfiguration configuration)
     {
         _configuration = configuration;
 

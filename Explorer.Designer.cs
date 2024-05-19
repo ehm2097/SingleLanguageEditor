@@ -1,6 +1,6 @@
-﻿namespace MLE;
+﻿namespace Avat.SingleLanguageEditor;
 
-partial class Form1
+partial class Explorer
 {
     private System.ComponentModel.IContainer components = null;
 

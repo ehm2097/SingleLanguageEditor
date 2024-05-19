@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace MLE;
+namespace Avat.SingleLanguageEditor;
 
 internal class TranslationUnitProxy
 {

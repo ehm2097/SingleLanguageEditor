@@ -1,4 +1,4 @@
-namespace MLE.DeadKeys;
+namespace Avat.SingleLanguageEditor.DeadKeys;
 
 internal class KeyComboDef 
 {

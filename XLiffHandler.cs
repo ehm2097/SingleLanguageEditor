@@ -1,7 +1,7 @@
 using System.Xml;
 using Microsoft.VisualBasic;
 
-namespace MLE;
+namespace Avat.SingleLanguageEditor;
 
 internal class XLiffHandler : IXLiffHandler
 {

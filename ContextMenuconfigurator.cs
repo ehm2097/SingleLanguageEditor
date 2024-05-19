@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace MLE;
+namespace Avat.SingleLanguageEditor;
 
 internal class ContextMenuconfigurator
 {

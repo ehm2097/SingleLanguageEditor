@@ -2,9 +2,9 @@ using System.ComponentModel;
 using System.Security.Cryptography;
 using System.Windows.Forms.Design;
 using Microsoft.Extensions.Configuration;
-using MLE.DeadKeys;
+using Avat.SingleLanguageEditor.DeadKeys;
 
-namespace MLE;
+namespace Avat.SingleLanguageEditor;
 
 internal partial class Editor : Form
 {

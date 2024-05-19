@@ -1,5 +1,5 @@
 
-namespace MLE;
+namespace Avat.SingleLanguageEditor;
 
 internal class XliffProcessor
 {

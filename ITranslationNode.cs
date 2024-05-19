@@ -1,4 +1,4 @@
-namespace MLE;
+namespace Avat.SingleLanguageEditor;
 
 internal interface ITranslationNode
 {

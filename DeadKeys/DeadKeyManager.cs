@@ -2,7 +2,7 @@ using System.DirectoryServices;
 using System.Reflection.Metadata.Ecma335;
 using Microsoft.Extensions.Configuration;
 
-namespace MLE.DeadKeys;
+namespace Avat.SingleLanguageEditor.DeadKeys;
 
 internal class DeadKeyManager
 {

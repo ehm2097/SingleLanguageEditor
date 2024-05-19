@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace MLE;
+namespace Avat.SingleLanguageEditor;
 
 internal class TranslationNodeFactory
 {

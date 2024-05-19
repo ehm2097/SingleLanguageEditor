@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Configuration;
 
-namespace MLE;
+namespace Avat.SingleLanguageEditor;
 
 static class Program
 {
@@ -21,6 +21,6 @@ static class Program
         // see https://aka.ms/applicationconfiguration.
         ApplicationConfiguration.Initialize();
         Application.EnableVisualStyles();
-        Application.Run(new Form1(configuration));
+        Application.Run(new Explorer(configuration));
     }    
 }

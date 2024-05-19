@@ -1,6 +1,6 @@
 using System.Windows.Forms.VisualStyles;
 
-namespace MLE;
+namespace Avat.SingleLanguageEditor;
 
 internal class StateMapping
 {

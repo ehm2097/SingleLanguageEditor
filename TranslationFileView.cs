@@ -2,7 +2,7 @@
 using System.Reflection.Metadata.Ecma335;
 using System.Security.AccessControl;
 
-namespace MLE;
+namespace Avat.SingleLanguageEditor;
 
 internal class TranslationFileView
 {
