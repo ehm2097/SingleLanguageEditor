@@ -1,5 +1,17 @@
 # SingleLanguageEditor
-A wannabe replacement for the MultiLanguageEditor
+
+## Introduction
+
+__SingleLanguageEditor__ is intended as a replacement for the MultiLanguageEditor tool, leaving out some features that I never used but adding some extras which I was missing:
+* A more comprehensive project presentation, based on two different views;
+* Full compatibility with the XLIFF translation states (and thus, conmpatibility with third party tools and add-ons)
+* The possibility to type translations very fast, by minimizing the required clicks / keys between texts;
+* The possibility to reuse the same translation for the same text that ppears several times within the project;
+* The possibility to type some special characters using dead keys combinations.
+
+The main project viewis an explorer-like form, which makes easy to locate a precise text within the project.
+
+The editor view does quite the opposite, switching easily (and thus, fast) from one translated text to the next one.
 
 ## Dead keys configuration
 
