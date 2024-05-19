@@ -20,23 +20,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-using Avat.SingleLanguageEditor.Forms;
-using Microsoft.Extensions.Configuration;
+namespace Avat.SingleLanguageEditor.Forms;
 
-namespace Avat.SingleLanguageEditor;
-
-static class Program
+internal class QualifiedText
 {
-    [STAThread]
-    static void Main(string[] args)
-    {
-        var configuration = new ConfigurationBuilder()
-            .AddCommandLine(args)
-            .AddJsonFile("profile.json")
-            .Build();
+    public QualifiedText(string category, string text)
+        => (Category, Text) = (category, text);
 
-        ApplicationConfiguration.Initialize();
-        Application.EnableVisualStyles();
-        Application.Run(new Explorer(configuration));
-    }    
+    public readonly string Category;
+    public readonly string Text;
 }
+

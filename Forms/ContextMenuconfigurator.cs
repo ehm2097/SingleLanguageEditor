@@ -20,23 +20,28 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-using Avat.SingleLanguageEditor.Forms;
-using Microsoft.Extensions.Configuration;
+namespace Avat.SingleLanguageEditor.Forms;
 
-namespace Avat.SingleLanguageEditor;
-
-static class Program
+internal class ContextMenuconfigurator
 {
-    [STAThread]
-    static void Main(string[] args)
+    public void AddMenuItem(ToolStripItem item, Func<ITranslationUnit, Action?> GetAction)
     {
-        var configuration = new ConfigurationBuilder()
-            .AddCommandLine(args)
-            .AddJsonFile("profile.json")
-            .Build();
+        _configActions.Add(u => {
+            var visible = (u != null) && (GetAction(u) != null);
+            item.Visible = visible;
+            return visible;
+        });
+    }
 
-        ApplicationConfiguration.Initialize();
-        Application.EnableVisualStyles();
-        Application.Run(new Explorer(configuration));
-    }    
+    public bool Apply(ITranslationUnit? translationUnit)
+    {
+        var isAnythingVisible = false;
+        foreach(var action in _configActions) 
+        { 
+            isAnythingVisible |= action.Invoke(translationUnit); 
+        }
+        return isAnythingVisible;
+    }
+
+    private readonly List<Func<ITranslationUnit?, bool>> _configActions = new();
 }
