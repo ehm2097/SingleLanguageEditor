@@ -1,0 +1,12 @@
+{
+    "profile": {
+        "keyMappings": [
+            {"keys": ["Ctrl+Oemcomma", "A"], "output": "\u0103"},
+            {"keys": ["Ctrl+Oemcomma", "Shift+A"],  "output": "\u0102"},
+            {"keys": ["Ctrl+Oemcomma", "S"], "output": "\u015F"},
+            {"keys": ["Ctrl+Oemcomma", "Shift+S"],  "output": "\u015E"},
+            {"keys": ["Ctrl+Oemcomma", "T"], "output": "\u0163"},
+            {"keys": ["Ctrl+Oemcomma", "Shift+T"],  "output": "\u0162"}
+        ]
+    }
+}

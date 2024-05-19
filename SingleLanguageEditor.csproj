@@ -33,7 +33,7 @@ SOFTWARE.
   </PropertyGroup>
 
   <ItemGroup>
-    <!--None Include="profile.json" CopyToOutputDirectory="Always" /-->
+    <None Include="profile.json" CopyToOutputDirectory="Always" />
   </ItemGroup>
 
   <ItemGroup>
